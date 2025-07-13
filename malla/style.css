@@ -1,0 +1,46 @@
+body {
+  font-family: sans-serif;
+  background: #fff0f6;
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  color: #d63384;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.subject {
+  padding: 10px;
+  border-radius: 10px;
+  width: 180px;
+  background-color: #f783ac;
+  color: white;
+  cursor: pointer;
+  border: 2px solid #d63384;
+  transition: background-color 0.3s, transform 0.2s;
+  user-select: none;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.subject.locked {
+  background-color: #f8d7e4;
+  color: #999;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.subject.passed {
+  background-color: #e64980;
+  color: white;
+  font-weight: bold;
+  transform: scale(1.05);
+}
